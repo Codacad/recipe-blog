@@ -60,9 +60,9 @@ div.two-column-layout{
 
 /* ingredients */
 
-div.ingredients{
+/* div.ingredients{
 
-}
+} */
 div.ingredients div.coocking-duration{
     display: none;
 }
@@ -99,9 +99,9 @@ div.graham p{
     line-height: 1.5;
 }
 /* cheesecake */
-div.cheesecake{
+/* div.cheesecake{
 
-}
+} */
 div.cheesecake h3{
     margin-bottom: 20px;
     font-weight: 500;
@@ -123,9 +123,9 @@ div.cheese-cake p{
 }
 
 /* instructions */
-div.instructions{
+/* div.instructions{
 
-}
+} */
 div.instructions h3{
     margin-bottom: 20px;
     margin-top: 30px;
