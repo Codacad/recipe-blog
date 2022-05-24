@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './compnents/header';
+import Ingredients from './compnents/ingredients';
+import Instructions from './compnents/instructions';
+import CoockingDuration from './compnents/cooking-duraion';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header />
+        <div className="two-column-layout">
+            <div className="main-compnents">
+                <Ingredients />
+                <Instructions />
+            </div>
+            <div className="side-component">
+                <CoockingDuration />
+            </div>
+        </div>
     </div>
   );
 }

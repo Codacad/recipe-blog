@@ -1,38 +1,266 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@300&family=Space+Mono:wght@700&display=swap');
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Space Mono', monospace;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.App{
+    padding: 3% 15%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Header */
+div.header div.cake img{
+    width: 100%;
+    height: 100%;
+}
+div.header h1{
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+div.header img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+div.header div.decription{
+    display: flex;
+    align-items: flex-start;
+    line-height: 1;
+    margin: 20px 0;
+    justify-content: center;
+}
+div.header div.decription p{
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+/* two-column-layout */
+
+div.two-column-layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 5% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ingredients */
+
+div.ingredients{
+
+}
+div.ingredients div.coocking-duration{
+    display: none;
+}
+
+div.ingredients h2{
+    margin-bottom: 20px;
+    font-size: 150%;
+    font-weight: 600;
+    color: rgba(0,0,0,.8);
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+div.graham-craker-crust h3{
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: rgba(0,0,0,.6);
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+div.graham-craker-crust div.contents{
+    padding-bottom: 20px;
+}
+div.graham-craker-crust div.contents div.graham{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+div.graham input{
+    margin-right: 20px;
+    margin-top: 4px;
+}
+div.graham p{
+    line-height: 1.5;
+}
+/* cheesecake */
+div.cheesecake{
+
+}
+div.cheesecake h3{
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: rgba(0,0,0,.6);
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+div.cheesecake div.contents div.cheese-cake{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+div.cheese-cake input{
+    margin-right: 20px;
+    margin-top: 4px;
+}
+div.cheese-cake p{
+    line-height: 1.5;
+}
+
+/* instructions */
+div.instructions{
+
+}
+div.instructions h3{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 150%;
+    font-weight: 600;
+    color: rgba(0,0,0,.8);
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+div.instructions div.contents div.instruction{
+    margin: 20px 0;
+    display: flex;
+    align-items:flex-start;
+}
+
+div.instruction div.number{
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 10px 15px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 2px;
+    color: #fff;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+}
+div.instruction p{
+    line-height: 1.78;
+}
+
+/* Side Component */
+
+div.side-component{
+    display: flex;
+    justify-content: flex-end;
+}
+div.coocking-duration{
+    width: 70%;
+}
+
+div.coocking-duration div.contents{
+    box-shadow: 0px 2px 20px rgba(0,0,0,.1);
+    padding: 15%;
+    width: 100%;
+}
+div.coocking-duration div.contents div.box img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+div.coocking-duration div.contents div.box{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+div.coocking-duration div.contents div.box div.content{
+    display: flex;
+    flex-direction: column;
+}
+
+div.coocking-duration div.contents div.box div.content span:nth-child(1){
+    color: rgba(0,0,0,.6);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.minutes, .hour, .total-hours{
+    font-weight: bold;
+    color: #333;
+}
+
+span.servings{
+    color: orange;
+}
+
+/* Media Quries */
+@media(max-width:1048px){
+    div.App{
+        padding: 3% 5%;
+    }
+    div.coocking-duration{
+        width: 100%;
+    }
+}
+
+@media(max-width:920px){
+    div.two-column-layout{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* side component */
+    div.side-component{
+        order: 1;
+    }
+    div.main-compnents{
+        order: 2;
+    }
+    
+    div.coocking-duration{
+        width: 100%;
+    }
+ 
+    div.coocking-duration div.contents{
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+    }
+    div.coocking-duration div.contents{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    div.coocking-duration div.contents div.box img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    div.coocking-duration div.contents .box:nth-child(1){
+        grid-column: 1 / span 3;
+    }
+
+    div.coocking-duration div.contents div.box div.content span:nth-child(1){
+        color: rgba(0,0,0,.6);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .minutes, .hour, .total-hours{
+        font-weight: bold;
+        color: #333;
+        font-size: 12px;
+    }
 }
