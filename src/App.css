@@ -205,6 +205,23 @@ span.servings{
     color: orange;
 }
 
+div.footer{
+    display: flex;
+    justify-content: center;
+}
+div.footer p{
+    font-size: 14px;
+}
+div.footer p a{
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+div.footer p a:hover{
+    color: rgba(51, 51, 51, 0.825);
+    text-decoration: underline;
+}
 /* Media Quries */
 @media(max-width:1048px){
     div.App{

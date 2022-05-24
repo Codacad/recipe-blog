@@ -3,6 +3,8 @@ import Header from './components/header';
 import Ingredients from './components/ingredients';
 import Instructions from './components/instructions';
 import CoockingDuration from './components/cooking-duraion';
+import Footer from './components/footer';
+
 function App() {
   
   return (
@@ -17,6 +19,7 @@ function App() {
                 <CoockingDuration />
             </div>
         </div>
+        <Footer />
     </div>
   );
 }
