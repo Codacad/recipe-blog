@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './compnents/header';
-import Ingredients from './compnents/ingredients';
-import Instructions from './compnents/instructions';
-import CoockingDuration from './compnents/cooking-duraion';
+import Header from './components/header';
+import Ingredients from './components/ingredients';
+import Instructions from './components/instructions';
+import CoockingDuration from './components/cooking-duraion';
 function App() {
   return (
     <div className="App">
